@@ -5,10 +5,10 @@ class TestProduct(unittest.TestCase):
 
     def test_calculateTotal(self):
         # Create a Product instance
-        product = product.Product("Laptop", 999.99, 2)
+        product1 = product.Product("Laptop", 999.99, 2)
 
         # Call the calculateTotal method
-        total = product.calculateTotal()
+        total = product1.calculateTotal()
 
         # Define the expected total
         expected_total = 999.99 * 2
