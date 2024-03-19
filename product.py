@@ -5,4 +5,6 @@ class Product:
         self.quantity = quantity
 
     def calculateTotal(self):
+        if self.price < 0 or self.quantity <0:
+            raise (ValueError, "Price and quantity cannot be negative")
         return self.price * self.quantity
